@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Register Fisherman</title>
+</head>
+<body>
+    <h1>Register Fisherman</h1>
+    <form action="/register" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="location">Location:</label><br>
+        <input type="text" id="location" name="location" required><br>
+        <label for="catch_amount">Catch Amount (KG):</label><br>
+        <input type="number" id="catch_amount" name="catch_amount" required><br>
+        <button type="submit">Register</button>
+    </form>
+    <a href="/">Back to Home</a>
+</body>
+</html>

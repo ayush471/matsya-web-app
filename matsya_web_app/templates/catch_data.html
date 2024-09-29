@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Fish Catch Data</title>
+</head>
+<body>
+    <h1>Fish Catch Data</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Catch Amount (KG)</th>
+        </tr>
+        {% for fisherman in data %}
+        <tr>
+            <td>{{ fisherman[1] }}</td>
+            <td>{{ fisherman[2] }}</td>
+            <td>{{ fisherman[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Back to Home</a>
+</body>
+</html>
